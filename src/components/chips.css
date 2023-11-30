@@ -1,0 +1,169 @@
+:root {
+  /* Color scheme */
+  --white-color: #fff;
+  --grey-color: #dbdbdb;
+  --dark-grey-color: #939695;
+  --text-color: #363636;
+  --text-light-color: #222;
+  --primary-color: #1abc9c;
+  --link-color: #2980b9;
+  --info-color: #3498db;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  --disabled-color: #aaadad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Chips component style */
+
+.chips {
+  color: var(--text-color);
+  background-color: var(--white-color);
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--text-color);
+  outline: var(--text-light-color) solid 1px;
+  cursor: pointer;
+}
+
+.icon-left {
+  margin-right: 4px;
+}
+
+.icon-right {
+  margin-left: 4px;
+}
+
+.disabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+/* Size Chips component style */
+
+/* Small size */
+
+.small-chips {
+  font-size: 12px;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+
+/* Medium size */
+
+.medium-chips {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+/* Large size */
+
+.large-chips {
+  font-size: 24px;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+/* border Chips component style */
+
+.squared-chips {
+  border-radius: 0px;
+}
+
+.rounded-chips {
+  border-radius: 999px;
+}
+
+/* State color Chips componet style */
+
+/* Primary state */
+
+.chips[data-state="primary"] {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.outline[data-state="primary"] {
+  color: var(--text-color);
+  outline: var(--primary-color) solid 1px;
+  background-color: transparent;
+}
+
+/* Info state */
+
+.chips[data-state="info"] {
+  color: var(--white-color);
+  background-color: var(--info-color);
+}
+
+.outline[data-state="info"] {
+  color: var(--text-color);
+  outline: var(--info-color) solid 1px;
+  background-color: transparent;
+}
+
+/* Link state */
+
+.chips[data-state="link"] {
+  color: var(--white-color);
+  background-color: var(--link-color);
+}
+
+.outline[data-state="link"] {
+  color: var(--text-color);
+  outline: var(--link-color) solid 1px;
+  background-color: transparent;
+}
+
+/* Success state */
+
+.chips[data-state="success"] {
+  color: var(--white-color);
+  background-color: var(--success-color);
+}
+
+.outline[data-state="success"] {
+  color: var(--text-color);
+  outline: var(--success-color) solid 1px;
+  background-color: transparent;
+}
+
+/* Warning state */
+
+.chips[data-state="warning"] {
+  color: var(--white-color);
+  background-color: var(--warning-color);
+}
+
+.outline[data-state="warning"] {
+  color: var(--text-color);
+  outline: var(--warning-color) solid 1px;
+  background-color: transparent;
+}
+
+/* Danger state */
+
+.chips[data-state="error"] {
+  color: var(--white-color);
+  background-color: var(--danger-color);
+}
+
+.outline[data-state="error"] {
+  color: var(--text-color);
+  outline: var(--danger-color) solid 1px;
+  background-color: transparent;
+}

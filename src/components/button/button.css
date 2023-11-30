@@ -1,0 +1,149 @@
+:root {
+  /* Color scheme */
+  --white-color: #fff;
+  --grey-color: #dbdbdb;
+  --text-color: #363636;
+  --text-light-color: #222;
+  --primary-color: #1abc9c;
+  --link-color: #2980b9;
+  --info-color: #3498db;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+}
+
+.button-style {
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.disabled-style {
+  color: var(--grey-color);
+}
+
+.disabled-style:hover {
+  cursor: not-allowed;
+}
+
+.btn-loading:hover {
+  cursor: progress;
+}
+
+.out-normal {
+  border: 2px solid var(--text-color);
+}
+
+.btn-primary,
+.out-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.out-primary {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-link,
+.out-link:hover {
+  background-color: var(--link-color);
+  color: var(--white-color);
+}
+.out-link {
+  border: 2px solid var(--link-color);
+  color: var(--link-color);
+}
+
+.btn-info,
+.out-info:hover {
+  background-color: var(--info-color);
+  color: var(--white-color);
+}
+
+.out-info {
+  border: 2px solid var(--info-color);
+  color: var(--info-color);
+}
+
+.btn-success,
+.out-success:hover {
+  background-color: var(--success-color);
+  color: var(--white-color);
+}
+
+.out-success {
+  border: 2px solid var(--success-color);
+  color: var(--success-color);
+}
+
+.btn-warning,
+.out-warning:hover {
+  background-color: var(--warning-color);
+  color: var(--white-color);
+}
+
+.out-warning {
+  border: 2px solid var(--warning-color);
+  color: var(--warning-color);
+}
+
+.btn-danger,
+.out-danger:hover {
+  background-color: var(--danger-color);
+  color: var(--white-color);
+}
+
+.out-danger {
+  border: 2px solid var(--danger-color);
+  color: var(--danger-color);
+}
+
+.txt-small {
+  font-size: x-small;
+}
+
+.txt-medium {
+  font-size: medium;
+  padding: 10px 14px;
+}
+
+.txt-large {
+  font-size: large;
+  padding: 14px 18px;
+}
+
+.squared-style {
+  border-radius: 0px;
+}
+
+.rounded-style {
+  border-radius: 100px;
+}
+
+.btn-icon-left {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-icon-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.no-text {
+  text-align: center;
+  padding: 8px 18px;
+}

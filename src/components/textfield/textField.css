@@ -1,0 +1,322 @@
+:root {
+  /* Color scheme */
+  --white-color: #fff;
+  --grey-color: #dbdbdb;
+  --dark-grey-color: #939695;
+  --text-color: #363636;
+  --text-light-color: #222;
+  --primary-color: #1abc9c;
+  --link-color: #2980b9;
+  --info-color: #3498db;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  --disabled-color: #aaadad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* basic component style */
+
+.componetContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  margin: 12px 0;
+}
+
+.label {
+  font-size: small;
+  margin-bottom: 4px;
+}
+
+.floatingLabel {
+  position: absolute;
+  font-size: 14px;
+  color: var(--dark-grey-color);
+  padding: 0 6px;
+  transform: translateY(10%);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.componetContainer:focus-within .floatingLabel {
+  transform: translateY(-125%) translateX(-10%);
+  font-size: small;
+  color: var(--text-color);
+}
+
+.form {
+  width: 145px;
+  flex: 1;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  background: transparent;
+  border: solid 1px var(--dark-grey-color);
+  border-radius: 3px;
+  height: 1.4rem;
+  color: var(--text-color);
+  padding: 0 6px;
+  display: block;
+  width: 100%;
+}
+
+.input:focus {
+  outline: var(--dark-grey-color) solid 2px;
+}
+
+.helper {
+  color: var(--text-color);
+  font-size: 9px;
+  text-align: left;
+  word-break: break-word;
+  white-space: normal;
+  margin-top: 2px;
+}
+
+.reactiveText {
+  margin: 4px 0;
+  font-size: small;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* icon style */
+
+.iconLeft {
+  position: absolute;
+  left: 4px;
+  color: var(--dark-grey-color);
+}
+
+.iconRight {
+  position: absolute;
+  right: 4px;
+  color: var(--dark-grey-color);
+}
+
+.inputPaddingIconLeft {
+  padding-left: 25px;
+}
+
+.inputPaddingIconRight {
+  padding-right: 25px;
+}
+
+/* size component style */
+
+/* small size */
+
+.small {
+  height: 1rem;
+  width: 120px;
+  font-size: small;
+}
+
+.form[data-state="small"] {
+  width: 120px;
+}
+
+#icon[data-state="small"] {
+  font-size: 14px;
+}
+
+.inputPaddingIconLeftSmall {
+  padding-left: 20px;
+}
+
+.inputPaddingIconRightSmall {
+  padding-right: 20px;
+}
+
+/* medium size */
+
+.medium {
+  height: 1.8rem;
+  width: 175px;
+  font-size: medium;
+}
+
+.form[data-state="medium"] {
+  width: 175px;
+}
+
+#icon[data-state="medium"] {
+  font-size: 22px;
+}
+
+.inputPaddingIconLeftMedium {
+  padding-left: 30px;
+}
+
+.inputPaddingIconRightMedium {
+  padding-right: 30px;
+}
+
+/* large size */
+
+.large {
+  height: 2.2rem;
+  width: 210px;
+  font-size: large;
+}
+
+.form[data-state="large"] {
+  width: 210px;
+}
+
+#icon[data-state="large"] {
+  font-size: 26px;
+}
+
+.inputPaddingIconLeftLarge {
+  padding-left: 34px;
+}
+
+.inputPaddingIconRightLarge {
+  padding-right: 34px;
+}
+
+/* attributes componet style */
+
+/* disabled */
+
+.isDisabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+/* invalid input style */
+
+.labelInvalidInput {
+  color: var(--danger-color);
+  font-size: small;
+}
+
+.invalidInput {
+  border: solid 1px var(--danger-color);
+}
+.invalidInput:focus {
+  outline: var(--danger-color) solid 2px;
+}
+
+/* border component style */
+
+.squared {
+  border-radius: 0px;
+}
+
+.rounded {
+  border-radius: 999px;
+}
+
+/* state color componet style */
+
+/* primary state */
+
+.input[data-state="primary"] {
+  border: solid 1px var(--primary-color);
+}
+
+.input[data-state="primary"]:focus {
+  outline: var(--primary-color) solid 2px;
+}
+
+.label[data-state="primary"],
+.iconLeft[data-state="primary"],
+.iconRight[data-state="primary"] {
+  color: var(--primary-color);
+}
+
+/* link state */
+
+.input[data-state="link"] {
+  border: solid 1px var(--link-color);
+}
+
+.input[data-state="link"]:focus {
+  outline: var(--link-color) solid 2px;
+}
+
+.label[data-state="link"],
+.iconLeft[data-state="link"],
+.iconRight[data-state="link"] {
+  color: var(--link-color);
+}
+
+/* info state */
+
+.input[data-state="info"] {
+  border: solid 1px var(--info-color);
+}
+
+.input[data-state="info"]:focus {
+  outline: var(--info-color) solid 2px;
+}
+
+.label[data-state="info"],
+.iconLeft[data-state="info"],
+.iconRight[data-state="info"] {
+  color: var(--info-color);
+}
+
+/* success state */
+
+.input[data-state="success"] {
+  border: solid 1px var(--success-color);
+}
+
+.input[data-state="success"]:focus {
+  outline: var(--success-color) solid 2px;
+}
+
+.label[data-state="success"],
+.iconLeft[data-state="success"],
+.iconRight[data-state="success"] {
+  color: var(--success-color);
+}
+
+/* warning state */
+
+.input[data-state="warning"] {
+  border: solid 1px var(--warning-color);
+}
+
+.input[data-state="warning"]:focus {
+  outline: var(--warning-color) solid 2px;
+}
+
+.label[data-state="warning"],
+.iconLeft[data-state="warning"],
+.iconRight[data-state="warning"] {
+  color: var(--warning-color);
+}
+
+/* danger state */
+
+.input[data-state="danger"] {
+  border: solid 1px var(--danger-color);
+}
+
+.input[data-state="danger"]:focus {
+  outline: var(--danger-color) solid 2px;
+}
+
+.label[data-state="danger"],
+.iconLeft[data-state="danger"],
+.iconRight[data-state="danger"] {
+  color: var(--danger-color);
+}

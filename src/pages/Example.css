@@ -1,0 +1,36 @@
+.example-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.preferences {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #1abc9c;
+  border-radius: 9px;
+  background-color: #1abc9c;
+}
+
+.text-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  margin-top: 20px;
+  margin-left: 3px;
+}
